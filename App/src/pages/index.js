@@ -1,10 +1,10 @@
 import DarkTheme from '../layouts/Dark'
-import Demos from "./demos";
+import Homepage from './home/home4-dark';
 
 export default function Home() {
   return (
     <DarkTheme>
-      <Demos />
+      <Homepage />
     </DarkTheme>
   )
 }
