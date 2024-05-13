@@ -12940,7 +12940,7 @@ p.slider-teaser{
 }
 
 .sw-overlay{
-  background: rgba(var(--primary-color-rgb), .35);
+  background: rgba(var(--primary-color-rgb), .5);
 }
 
 .swiper-scrollbar,
