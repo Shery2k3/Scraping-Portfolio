@@ -13201,6 +13201,7 @@ p.slider-teaser{
   border-radius:30px;
   -moz-border-radius:30px;
   -webkit-border-radius:30px;
+  margin-top: 10px;
 }
 
 .dark-scheme .subtitle, .text-light .subtitle{
