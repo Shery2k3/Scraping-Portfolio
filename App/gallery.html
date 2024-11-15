@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gallery - Ibadat Traders</title>
+        <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16" />
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Ibadat Traders - Metal & Tyre Scraping Gallery" name="description" />
+        <meta content="" name="keywords" />
+        <meta content="" name="author" />
+
+        <!-- CSS Files -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
+        <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+        <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
+        
+        <!-- Add some custom styles for the gallery -->
+        <style>
+            .gallery-item {
+                margin-bottom: 30px;
+                opacity: 0;
+            }
+            .gallery-item.wow.fadeInUp {
+                animation-duration: 0.6s;
+            }
+            .gallery-img {
+                border-radius: 10px;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+            .gallery-img:hover {
+                transform: scale(1.05);
+            }
+            .page-header {
+                padding-top: 180px; /* Accounts for fixed header height */
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+
+            .page-header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.7);
+            }
+
+            .page-header .container {
+                position: relative;
+                z-index: 1;
+            }
+
+            .subtitle {
+                display: inline-block;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <!-- page preloader begin -->
+            <div id="de-loader"></div>
+            <!-- page preloader close -->
+            <!-- Header section - copy from index.html -->
+            <header class="transparent scroll-light has-topbar">
+                <div id="topbar">
+                    <div class="container">
+                        <div class="topbar-left xs-hide">
+                            <div class="topbar-widget">
+                                <a href="#"><i class="fa fa-phone"></i>+000 000 0000</a>
+                            </div>
+                            <div class="topbar-widget">
+                                <a href="#"><i class="fa fa-envelope"></i>contact@company.com</a>
+                            </div>
+                        </div>
+                        <div class="topbar-right">
+                            <div class="social-icons">
+                                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex sm-pt10">
+                                <div class="de-flex-col">
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img class="logo-main" src="images/logo.webp" alt="" />
+                                            <img class="logo-scroll" src="images/logo-black.webp" alt="" />
+                                            <img class="logo-mobile" src="images/logo.webp" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="de-flex-col header-col-mid">
+                                    <ul id="mainmenu">
+                                        <li><a class="menu-item" href="index.html">Home</a></li>
+                                        <li><a class="menu-item" href="#">Services</a></li>
+                                        <li><a class="menu-item" href="gallery.html">Gallery</a></li>
+                                        <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="de-flex-col"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- content begin -->
+            <div class="no-bottom no-top" id="content">
+                <div id="top"></div>
+                
+                <!-- Page Header -->
+                <section class="page-header bg-color-3 text-center" data-bgimage="url(images/background/3.webp)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="pt60 pb60">
+                                    <div class="subtitle bg-color-2 text-white wow fadeInUp mb-3">Our Work</div>
+                                    <h2 class="wow fadeInUp text-light" data-wow-delay=".2s">Gallery</h2>
+                                    <p class="lead wow fadeInUp text-light">Explore our collection of metal and tyre scraping projects</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery Grid Section -->
+                <section class="pt90 pb90">
+                    <div class="container">
+                        <div class="row g-4">
+                            <!-- Gallery items with faster animations -->
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp">
+                                <img src="images/gallery/1.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay=".15s">
+                                <img src="images/gallery/2.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay=".3s">
+                                <img src="images/gallery/3.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay=".45s">
+                                <img src="images/gallery/4.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay=".6s">
+                                <img src="images/gallery/5.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay=".75s">
+                                <img src="images/gallery/6.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay=".9s">
+                                <img src="images/gallery/7.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay="1.05s">
+                                <img src="images/gallery/8.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay="1.2s">
+                                <img src="images/gallery/9.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay="1.2s">
+                                <img src="images/gallery/10.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay="1.2s">
+                                <img src="images/gallery/11.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay="1.2s">
+                                <img src="images/gallery/12.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay="1.2s">
+                                <img src="images/gallery/13.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                            <div class="col-lg-4 col-md-6 gallery-item wow fadeInUp" data-wow-delay="1.2s">
+                                <img src="images/gallery/14.jpg" alt="Scraping Work" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!-- content close -->
+
+            <!-- Footer section -->
+            <footer class="section-dark">
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-sm-6">
+                            <img src="images/logo.webp" alt="" />
+                            <div class="spacer-20"></div>
+                            <p>
+                                At Ibadat Traders, we excel in delivering premium scraping services 
+                                tailored to meet your industrial needs. With our expertise and dedication, 
+                                we ensure efficient removal and recycling of metal and tyre waste, 
+                                contributing to a cleaner and sustainable environment.
+                            </p>
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="widget">
+                                        <h5>Company</h5>
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="widget">
+                                        <h5>Our Services</h5>
+                                        <ul>
+                                            <li><a href="#">Metal Scraping</a></li>
+                                            <li><a href="#">Tyre Scraping</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                            <div class="widget">
+                                <h5 class="id-color-2">Contact</h5>
+                                <h2 class="jarallax mb0 wow fadeInUp" data-wow-delay=".2s">
+                                    <i class="icofont-phone-circle id-color-2"></i>+0 000 000 000
+                                </h2>
+                                <div class="spacer-20"></div>
+                                <div class="fw-bold text-white">
+                                    <i class="icofont-location-pin me-2 id-color-2"></i>Office Location
+                                </div>
+                                City, Country
+                                <div class="spacer-20"></div>
+                                <div class="fw-bold text-white">
+                                    <i class="icofont-envelope me-2 id-color-2"></i>Send a Message
+                                </div>
+                                contact@company.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subfooter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="de-flex">
+                                    <div class="de-flex-col">
+                                        <p>Copyright 2024 - Ibadat Traders by <a href="https://bytesyncstudio.com" target="_blank"><span>ByteSync Studio</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Javascript Files -->
+        <script src="js/plugins.js"></script>
+        <script src="js/designesia.js"></script>
+    </body>
+</html>
